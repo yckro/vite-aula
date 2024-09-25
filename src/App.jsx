@@ -1,12 +1,13 @@
 
 import './App.css'
-import { Button } from './components/button'
+import Card  from './components/cards/card'
 
 function App() {
-
   return (
-    <Button />
-  )
+    <>
+    <Card />
+    </>
+  );
 }
 
-export default App
+export default App;
