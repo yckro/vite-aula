@@ -1,11 +1,14 @@
 
 import './App.css'
 import Card  from './components/cards/card'
+import Button from './components/button/button';
 
 function App() {
   return (
     <>
-    <Card />
+    <Button label='baixar cv' />
+
+    <Button />
     </>
   );
 }
