@@ -1,26 +1,24 @@
-import React from "react";
+// src/components/cards/card.jsx
+import React from 'react';
 import './card.css'
 
-//componente com  função
+// Definindo cardsTitle corretamente dentro do componente Cards.
+const cardsTitle = ['Titulo 1', 'Titulo 2u', 'Titulo 3'];
 
-const Card = ({children}) => {
-    return(
-        <div className="card">
-            {children}
+const Cards = () => {
+    return (
+        <div>
+            <h2>Meus erfgbrfstcards</h2>
+            <div>
+                {cardsTitle.map((cardTitle, index) => (
+                    <div key={index} className="card"> {/* Alterando para div se Card não for um componente */}
+                        <h3>{cardTitle}</h3>
+                        <p>Esse é um texto do card</p>
+                    </div>
+                ))}
+            </div>
         </div>
-    )
-}
+    );
+};
 
-// class card extends React.Component{
-//     render(){
-//         return(
-//             <div className="card">
-//                 <h3>{this.props.title}</h3>
-//                 <p>esse é um texto do card</p>
-//             </div>
-//         )
-//     }
-// }
-
-export default Card;
-
+export default Cards;

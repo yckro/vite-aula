@@ -1,15 +1,12 @@
-
-import './App.css'
-import Card  from './components/cards/card'
-import Button from './components/button/button';
+// src/App.jsx
+import './App.css';
+import Cards from './components/cards/card'; // Corrigindo importação para o componente Cards
 
 function App() {
   return (
-    <>
-    <Button label='baixar cv' />
-
-    <Button />
-    </>
+    <div>
+      <Cards />
+    </div>
   );
 }
 
