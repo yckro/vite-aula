@@ -10,8 +10,8 @@ const Cards = () => {
         <div>
             <h2>Meus erfgbrfstcards</h2>
             <div>
-                {cardsTitle.map((cardTitle, index) => (
-                    <div key={index} className="card"> {/* Alterando para div se Card não for um componente */}
+                {cardsTitle.map((cardTitle, index,) => (
+                    <div key={index} className="card" style={{backgroundColor: 'red'}}>
                         <h3>{cardTitle}</h3>
                         <p>Esse é um texto do card</p>
                     </div>
